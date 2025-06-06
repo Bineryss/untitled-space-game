@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2255fa8bfaa432489b3b82d3b0ae24f, type: 3}
-  m_Name: Ship B-0
+  m_Name: Ship D-0
   m_EditorClassIdentifier: 
-  ShipPrefab: {fileID: 6911670032008572406, guid: 105eb3dd78937b446b2ea7771f83758a, type: 3}
-  Speed: 5
+  ShipPrefab: {fileID: 0}
+  Speed: 0

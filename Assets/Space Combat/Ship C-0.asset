@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2255fa8bfaa432489b3b82d3b0ae24f, type: 3}
   m_Name: Ship C-0
   m_EditorClassIdentifier: 
-  shipPrefab: {fileID: 6911670032008572406, guid: 4a6ad66d8917b4e489c6f3e087d1b17d, type: 3}
+  ShipPrefab: {fileID: 6911670032008572406, guid: 4a6ad66d8917b4e489c6f3e087d1b17d, type: 3}
+  Speed: 2.38

@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour, InputSystem_Actions.IPlayerActions
 {
     [Header("Movement Settings")]
-    [SerializeField] private float speed = 5.0f;
+    [SerializeField] private float speed = 15.0f;
 
     private Vector2 moveInput;
     private bool disabled;

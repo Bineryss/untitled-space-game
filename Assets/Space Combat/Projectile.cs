@@ -11,14 +11,18 @@ public class Projectile : MonoBehaviour
         this.target = target;
     }
 
-    void OnCollisionEnter(Collision col)
+
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        Damageable target = col.collider.GetComponent<Damageable>();
-        Debug.Log($"target: {target}");
-        if (!target.GetTargetType().Equals(this.target)) return;
+        IDamageable target = collision.GetComponent<IDamageable>();
+        if (target == null) return;
+
+        Debug.Log($"target: {target.TargetType}-{this.target}; can damage {target.TargetType.Equals(this.target)}");
+        if (!target.TargetType.Equals(this.target)) return;
 
         target?.TakeDamage(damage);
         Destroy(gameObject); //TODO add object pooling
+
     }
 
     void OnBecameInvisible()

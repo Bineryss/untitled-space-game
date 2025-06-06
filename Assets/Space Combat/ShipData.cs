@@ -3,7 +3,15 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ShipData", menuName = "Game/ShipData")]
 public class ShipData : ScriptableObject
 {
-    [SerializeField] private GameObject shipPrefab;
+    [Header("Ship Data")]
+    [SerializeField] public GameObject ShipPrefab;
 
-    public GameObject ShipPrefab => shipPrefab;
+    [Header("Enemy Data")]
+    [SerializeField] public float Speed;
+    [SerializeField] public IMovementPattern MovementPattern;
+    [SerializeField] public int Cost;
+    [SerializeField] public float itemDropChance;
+    
+    [Header("Crafting Data")]
+    [SerializeField] public string tbd;
 }

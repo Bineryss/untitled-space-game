@@ -18,8 +18,7 @@ public class WaveController : MonoBehaviour
 
     private void SpawnEnemy(ShipData ship, WeaponData data)
     {
-        GameObject obj = Instantiate(ship.ShipPrefab, spawnPoints[0].position, spawnPoints[0].rotation);
-        obj.GetComponent<WeaponController>().Configure(data, Target.PLAYER);
+        GameObject obj = ShipFactory.SpawnShip(ship, data, Target.PLAYER, spawnPoints[0]);
         enemies.Add(obj);
     }
 

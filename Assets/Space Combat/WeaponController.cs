@@ -8,6 +8,9 @@ public class WeaponController : MonoBehaviour
     private WeaponMount[] mounts;
     private Target target;
     private bool isFiring;
+
+    private WaitForSeconds wait;
+    private WaitForSeconds salvoDelay;
     void Awake()
     {
         mounts = GetComponentsInChildren<WeaponMount>();
@@ -17,13 +20,15 @@ public class WeaponController : MonoBehaviour
     {
         weaponData = data;
         this.target = target;
+        wait = new(1f / weaponData.FireRate + weaponData.SalvoDelay);
+        salvoDelay = new(weaponData.SalvoDelay);
+
         if (!isFiring) StartCoroutine(FireRoutine());
     }
 
     private IEnumerator FireRoutine()
     {
         isFiring = true;
-        var wait = new WaitForSeconds(1f / weaponData.FireRate * weaponData.SalvoDelay);
         while (true)
         {
             foreach (var mount in mounts)
@@ -36,12 +41,13 @@ public class WeaponController : MonoBehaviour
 
     IEnumerator ShootSalvo(Transform firePoint)
     {
+        Debug.Log($"salvo:{weaponData.SalvoAmmount},{weaponData.SalvoDelay}");
         for (int i = 0; i < weaponData.SalvoAmmount; i++)
         {
             SpawnProjectile(firePoint);
             if (i < weaponData.SalvoAmmount - 1)
             {
-                yield return new WaitForSeconds(weaponData.SalvoDelay);
+                yield return salvoDelay;
             }
         }
     }
@@ -53,7 +59,13 @@ public class WeaponController : MonoBehaviour
                                     firePoint.position,
                                     firePoint.rotation);
         Rigidbody2D rb = proj.GetComponent<Rigidbody2D>();
-        rb.linearVelocity = firePoint.up * weaponData.Speed;
+        Vector3 speed = firePoint.up * weaponData.Speed;
+        if (gameObject.tag.Equals(Target.ENEMY.ToString()))
+        {
+            speed *= weaponData.SpeedDelay;
+        }
+
+        rb.linearVelocity = speed;
         proj.GetComponent<Projectile>().Initialize(weaponData.Damage, target);
     }
 

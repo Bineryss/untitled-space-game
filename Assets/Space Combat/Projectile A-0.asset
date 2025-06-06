@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Projectile A-0
   m_EditorClassIdentifier: 
   ProjectilePrefab: {fileID: 7718586804728379853, guid: 5d3d04a4d3d20ff4a8e15aadcdbf5c81, type: 3}
-  Speed: 1
+  Speed: 10
   FireRate: 1
   Damage: 1
   ActiveTime: 100
-  SalvoAmmount: 1
-  SalvoDelay: 1
+  SalvoAmmount: 3
+  SalvoDelay: 0.05
+  SpeedDelay: 0.5

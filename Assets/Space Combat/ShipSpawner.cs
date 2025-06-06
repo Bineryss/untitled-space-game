@@ -11,32 +11,6 @@ public class ShipSpawner : MonoBehaviour
 
     void Start()
     {
-        SpawnPlayerShip();
+        ShipFactory.SpawnShip(ship, data, Target.ENEMY, gameObject.transform, playerInputActions);
     }
-
-    private GameObject SpawnPlayerShip()
-    {
-        GameObject playerShip = Instantiate(ship.ShipPrefab);
-        playerShip.GetComponent<WeaponController>().Configure(data, Target.ENEMY);
-        PlayerInput playerInput = playerShip.AddComponent<PlayerInput>();
-        ConfigurePlayerInput(playerInput);
-        PlayerController controller = playerShip.AddComponent<PlayerController>();
-        controller.Instantiate();
-
-        ConfigureAsPlayerShip(playerShip);
-        return playerShip;
-    }
-
-    private void ConfigurePlayerInput(PlayerInput playerInput)
-    {
-        playerInput.actions = playerInputActions;
-        playerInput.defaultActionMap = nameof(InputSystem_Actions.Player);;
-        playerInput.notificationBehavior = PlayerNotifications.InvokeCSharpEvents;
-    }
-
-    private void ConfigureAsPlayerShip(GameObject playerShip)
-    {
-        playerShip.tag = Target.PLAYER.ToString();
-    }
-
 }
