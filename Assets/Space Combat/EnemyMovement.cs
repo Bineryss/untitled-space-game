@@ -11,7 +11,6 @@ public class TopEnemyController : MonoBehaviour, IMovementPattern
     [Header("References")]
     public Rigidbody2D rb;
     private Vector2 currentPatrolPoint;
-    private bool hasSpawned = false;
 
     // Screen bounds for top half
     private float minX;
