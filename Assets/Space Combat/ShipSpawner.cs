@@ -20,7 +20,8 @@ public class ShipSpawner : MonoBehaviour
         playerShip.GetComponent<WeaponController>().Configure(data, Target.ENEMY);
         PlayerInput playerInput = playerShip.AddComponent<PlayerInput>();
         ConfigurePlayerInput(playerInput);
-        playerShip.AddComponent<PlayerController>();
+        PlayerController controller = playerShip.AddComponent<PlayerController>();
+        controller.Instantiate();
 
         ConfigureAsPlayerShip(playerShip);
         return playerShip;
@@ -29,8 +30,8 @@ public class ShipSpawner : MonoBehaviour
     private void ConfigurePlayerInput(PlayerInput playerInput)
     {
         playerInput.actions = playerInputActions;
-        playerInput.defaultActionMap = "Player";
-        playerInput.notificationBehavior = PlayerNotifications.SendMessages;
+        playerInput.defaultActionMap = nameof(InputSystem_Actions.Player);;
+        playerInput.notificationBehavior = PlayerNotifications.InvokeCSharpEvents;
     }
 
     private void ConfigureAsPlayerShip(GameObject playerShip)

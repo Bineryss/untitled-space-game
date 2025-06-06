@@ -1,35 +1,27 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, InputSystem_Actions.IPlayerActions
 {
     [Header("Movement Settings")]
     [SerializeField] private float speed = 5.0f;
 
     private Vector2 moveInput;
     private bool disabled;
+    private InputSystem_Actions actions;
 
 
-    void Start()
+    public void Instantiate()
     {
-        // Debug the PlayerInput setup
-        PlayerInput playerInput = GetComponent<PlayerInput>();
-        if (playerInput != null)
-        {
-            Debug.Log($"✅ PlayerInput found");
-            Debug.Log($"Actions Asset: {playerInput.actions?.name}");
-            Debug.Log($"Current Action Map: {playerInput.currentActionMap?.name}");
-            Debug.Log($"Notification Behavior: {playerInput.notificationBehavior}");
-        }
-        else
-        {
-            Debug.LogError("❌ PlayerInput component missing!");
-        }
+        // Instantiate and hook up the generated actions
+        actions = new InputSystem_Actions();
+        actions.Player.SetCallbacks(this);
+        actions.Player.Enable();
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        Debug.Log($"🎮 OnMove triggered: {context.ReadValue<Vector2>()}");
         moveInput = context.ReadValue<Vector2>();
     }
 
@@ -43,5 +35,4 @@ public class PlayerController : MonoBehaviour
 
     public void DisableMovement() => disabled = true;
     public void EnableMovement() => disabled = false;
-
 }
