@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86edfd4d57bd9d841b442cd94bd5870f, type: 3}
   m_Name: Polymetallic
   m_EditorClassIdentifier: 
-  Name: <Item Name>
-  Description: <Item Desription>
-  Sprite: {fileID: 0}
-  CraftItem: 0
+  Name: Polymetallic
+  Description: Multi-element alloy for general ship components
+  Sprite: {fileID: -6490750339569668760, guid: c73994b5e9ffdc645aa3b72c66a62956, type: 3}
+  CraftItem: 7
   Rarity: 0

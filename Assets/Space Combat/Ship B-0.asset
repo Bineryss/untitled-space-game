@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: Ship B-0
   m_EditorClassIdentifier: 
   ShipPrefab: {fileID: 6911670032008572406, guid: 105eb3dd78937b446b2ea7771f83758a, type: 3}
-  Speed: 5
+  Rarity: 2
+  Speed: 20
+  Cost: 0
+  itemDropChance: 0
+  tbd: 

@@ -19,4 +19,6 @@ MonoBehaviour:
   ActiveTime: 100
   SalvoAmmount: 3
   SalvoDelay: 0.05
-  SpeedDelay: 0.5
+  Rarity: 0
+  SpeedDelay: 0.2
+  FireRateDelay: 0.3

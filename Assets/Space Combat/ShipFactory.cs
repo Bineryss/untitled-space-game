@@ -19,7 +19,7 @@ public class ShipFactory : MonoBehaviour
         ConfigurePlayerInput(playerInput, playerInputActions);
         PlayerController controller = ship.AddComponent<PlayerController>();
         controller.Instantiate();
-        
+
         return ship;
     }
 
@@ -38,7 +38,7 @@ public class ShipFactory : MonoBehaviour
 
 
         IMovementPattern movement = ship.AddComponent<TopEnemyController>();
-        movement.StartMovement(data.Speed);
+        movement.StartMovement(data.Speed / 10);
     }
     private static void ConfigurePlayerInput(PlayerInput playerInput, InputActionAsset playerInputActions)
     {

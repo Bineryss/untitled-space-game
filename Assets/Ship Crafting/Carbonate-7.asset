@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86edfd4d57bd9d841b442cd94bd5870f, type: 3}
   m_Name: Carbonate-7
   m_EditorClassIdentifier: 
-  Name: <Item Name>
-  Description: <Item Desription>
-  Sprite: {fileID: 0}
+  Name: Carbonate-7
+  Description: Enhanced carbon fiber for lightweight construction
+  Sprite: {fileID: 5618373464447793108, guid: c53245f511101924e9f81430563f13e5, type: 3}
   CraftItem: 7
   Rarity: 0

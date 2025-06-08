@@ -12,7 +12,4 @@ public class ShipData : ScriptableObject
     [SerializeField] public IMovementPattern MovementPattern;
     [SerializeField] public int Cost;
     [SerializeField] public float itemDropChance;
-
-    [Header("Crafting Data")]
-    [SerializeField] public string tbd;
 }

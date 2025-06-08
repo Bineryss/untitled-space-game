@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86edfd4d57bd9d841b442cd94bd5870f, type: 3}
   m_Name: Plasmite
   m_EditorClassIdentifier: 
-  Name: <Item Name>
-  Description: <Item Desription>
-  Sprite: {fileID: 0}
-  CraftItem: 0
-  Rarity: 0
+  Name: Plasmite
+  Description: Crystalline material that naturally channels plasma energy
+  Sprite: {fileID: -2822417714644885741, guid: 02567ec0f5f1008498ab6dc9ffec22b7, type: 3}
+  CraftItem: 6
+  Rarity: 2

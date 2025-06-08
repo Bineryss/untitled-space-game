@@ -20,7 +20,9 @@ public class WeaponController : MonoBehaviour
     {
         weaponData = data;
         this.target = target;
-        wait = new(1f / weaponData.FireRate + weaponData.SalvoDelay);
+        float modifyer = gameObject.tag.Equals(Target.ENEMY.ToString()) ? data.FireRateDelay : 1;
+        wait = new(1f / (weaponData.FireRate * modifyer) + weaponData.SalvoDelay);
+
         salvoDelay = new(weaponData.SalvoDelay);
 
         if (!isFiring) StartCoroutine(FireRoutine());

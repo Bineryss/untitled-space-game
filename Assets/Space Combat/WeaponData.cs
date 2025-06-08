@@ -14,5 +14,6 @@ public class WeaponData : ScriptableObject
 
     [Header("Enemey Modifier")]
     [SerializeField] public float SpeedDelay = 0.5f;
+    [SerializeField] public float FireRateDelay = 0.5f;
 
 }

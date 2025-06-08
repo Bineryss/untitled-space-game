@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -8,18 +9,45 @@ public class WaveController : MonoBehaviour
 
     private Transform[] spawnPoints;
     private readonly List<GameObject> enemies = new();
+    [SerializeField] private int ActiveWave = 0;
     void Awake()
     {
-        spawnPoints = GetComponentsInChildren<Transform>().Skip(1).ToArray();
-        Debug.Log($"spawn points: {string.Join(";", spawnPoints.Select(el => el.position).ToArray())}");
-        EnemyData data = waves[0].Enemies.First();
-        SpawnEnemy(data.Ship, data.Weapon);
+        StartMission();
     }
 
-    private void SpawnEnemy(ShipData ship, WeaponData data)
+    public void StartMission()
     {
-        GameObject obj = ShipFactory.SpawnShip(ship, data, Target.PLAYER, spawnPoints[0]);
-        enemies.Add(obj);
+        spawnPoints = GetComponentsInChildren<Transform>().Skip(1).ToArray();
+        SpawnWave(ActiveWave);
+    }
+
+    public void SpawnWave(int wave)
+    {
+        if (wave >= waves.Length)
+        {
+            Debug.Log("Wave doesn't exist!");
+            return;
+        }
+
+        Wave activeWave = waves[wave];
+        StartCoroutine(SpawnWaveCoroutine(activeWave));
+    }
+
+    private IEnumerator SpawnWaveCoroutine(Wave activeWave)
+    {
+        foreach (EnemyData data in activeWave.Enemies)
+        {
+            for (int i = 0; i < data.Ammount; i++)
+            {
+                // Pick random spawn point
+                Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+                GameObject obj = ShipFactory.SpawnShip(data.Ship, data.Weapon, Target.PLAYER, spawnPoint);
+                enemies.Add(obj);
+
+                // Wait before spawning next enemy
+                yield return new WaitForSeconds(0.5f);
+            }
+        }
     }
 
 

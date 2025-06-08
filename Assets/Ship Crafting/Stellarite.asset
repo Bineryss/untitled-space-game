@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Stellarite
   m_EditorClassIdentifier: 
   Name: Stellarite
-  Description: <Item Desription>
-  Sprite: {fileID: 0}
-  CraftItem: 0
-  Rarity: 0
+  Description: Star-forged mineral that amplifies weapon output
+  Sprite: {fileID: 4686324442250798850, guid: 2e7751679d517504db396c349f843fdf, type: 3}
+  CraftItem: 5
+  Rarity: 3

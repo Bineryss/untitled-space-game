@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/root.uss?fileID=7433441132597879392&amp;guid=76d522cb3855b71438c2c37437722a38&amp;type=3#root" />
+    <Style src="project://database/Assets/Ship%20Crafting/item.uss?fileID=7433441132597879392&amp;guid=b661fb355236d4445aef85e5c7c5c009&amp;type=3#item" />
+    <ui:VisualElement style="flex-grow: 1; align-items: center; justify-content: center; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-image: none;">
+        <ui:Button class="container exotic active" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); background-color: rgba(255, 255, 255, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; justify-content: space-between; background-size: contain; align-self: center; background-image: url(&quot;project://database/Assets/Ship%20Crafting/assets/common-item-frame.png?fileID=2800000&amp;guid=42ccb7828dd552d4ea73dd840914262e&amp;type=3#common-item-frame&quot;);">
+            <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Ship%20Crafting/assets/item-frame-text-holder.png?fileID=2800000&amp;guid=d1bfbf6802c2fc44ba3f06628964ba2c&amp;type=3#item-frame-text-holder&quot;); background-size: contain; width: auto; position: absolute; right: 0; bottom: 0; left: 0; top: 0; justify-content: space-between;" />
+            <ui:VisualElement name="image" style="flex-grow: 1; background-image: none; background-size: contain; min-height: auto;" />
+            <ui:VisualElement style="flex-grow: initial; flex-direction: row; justify-content: space-between; align-self: stretch; align-items: center;">
+                <ui:Label text="#name" name="label" class="item-text" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                <ui:Label text="#quantity" name="quantity" class="item-text" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; font-size: 14px;" />
+            </ui:VisualElement>
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>

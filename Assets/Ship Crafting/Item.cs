@@ -11,7 +11,14 @@ public class Item : ScriptableObject
 
     [Header("Gameplay")]
     public Characteristic CraftItem = Characteristic.NOTHING;
-    public Rarity Rarity = Rarity.COMMON;
+    public Rarity Rarity;
+}
+
+[System.Serializable]
+public struct ResourceQuantity
+{
+    public Item Ressorce;
+    public int Quantity;
 }
 
 public interface ICraftable

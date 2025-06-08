@@ -1,0 +1,73 @@
+.exotic {
+    background-image: url("project://database/Assets/Ship%20Crafting/assets/exotic-item-frame.png?fileID=2800000&guid=6429625d317b2844d8cf66262ac8d76a&type=3#exotic-item-frame");
+    background-size: contain;
+}
+
+.item-text {
+    -unity-font-style: bold;
+    font-size: 12px;
+}
+
+.container:hover {
+    width: 144px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    flex-shrink: initial;
+    flex-grow: initial;
+    height: 144px;
+    padding-top: 2px;
+    padding-right: 12px;
+    padding-bottom: 2px;
+    padding-left: 12px;
+    scale: 1.01 1.01;
+    transition-duration: 0.2s;
+}
+
+.container:active {
+    width: 144px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    flex-shrink: initial;
+    flex-grow: initial;
+    height: 144px;
+    padding-top: 2px;
+    padding-right: 12px;
+    padding-bottom: 2px;
+    padding-left: 12px;
+    scale: 0.9 0.9;
+    transition-duration: 0.2s;
+}
+
+.container {
+    width: 144px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    flex-shrink: initial;
+    flex-grow: initial;
+    height: 144px;
+    padding-top: 4px;
+    padding-right: 14px;
+    padding-bottom: 4px;
+    padding-left: 14px;
+    transition-duration: 0.3s;
+}
+
+.legendary {
+    background-image: url("project://database/Assets/Ship%20Crafting/assets/legendary-item-frame.png?fileID=2800000&guid=19d4d79f6a7ce374e94868e90c1b9309&type=3#legendary-item-frame");
+    background-size: contain;
+}

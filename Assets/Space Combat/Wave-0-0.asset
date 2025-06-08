@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Wave-0-0
   m_EditorClassIdentifier: 
   Enemies:
+  - <Ammount>k__BackingField: 3
+    <Ship>k__BackingField: {fileID: 11400000, guid: 6664913b857d8cf44b48e8d63318611a, type: 2}
+    <Weapon>k__BackingField: {fileID: 11400000, guid: 9bfdd7c5102196e4d9398f1d231c79dd, type: 2}
   - <Ammount>k__BackingField: 1
-    <Ship>k__BackingField: {fileID: 11400000, guid: a9f008af06367d6468bcb8034c640cc5, type: 2}
-    <Weapon>k__BackingField: {fileID: 11400000, guid: d8975937ebacd3341b11f58603949f21, type: 2}
+    <Ship>k__BackingField: {fileID: 11400000, guid: 50c690d5989624a4d829e707a1197097, type: 2}
+    <Weapon>k__BackingField: {fileID: 11400000, guid: 76ed31ed2f9859c46b669d41818e55f8, type: 2}
