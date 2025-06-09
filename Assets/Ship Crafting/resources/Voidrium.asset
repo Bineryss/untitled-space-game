@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86edfd4d57bd9d841b442cd94bd5870f, type: 3}
-  m_Name: Ceramthane
+  m_Name: Voidrium
   m_EditorClassIdentifier: 
-  Name: 'Ceramthane '
-  Description: Heat-resistant ceramic compound for engine components
-  Sprite: {fileID: 870697920081174769, guid: 6c88085782fba8f4f86c070aa85bdf4f, type: 3}
-  CraftItem: 8
-  Rarity: 1
+  Name: Voidrium
+  Description: A dark, energy-absorbing metal ideal for stealth ship hulls
+  Icon: {fileID: -3042670998210284883, guid: 89850031480e9ca4bb7d5d006c18e6f5, type: 3}
+  Rarity: {fileID: 11400000, guid: 0ce1291977fe2d34699fc76992dc7a5b, type: 2}
+  CraftItem: 0

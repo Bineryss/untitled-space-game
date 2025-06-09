@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2255fa8bfaa432489b3b82d3b0ae24f, type: 3}
   m_Name: Ship B-0
   m_EditorClassIdentifier: 
+  Name: Solaris Lance
+  Description: "The Solaris Lance is a front-line heavy assault ship built around
+    a stabilized Ionseed Core matrix. Its entire hull glows with internal plasma
+    circulation channels, and its energy distribution system supports up to six simultaneous
+    weapon arrays. Its radiant exhaust trail makes it impossible to miss \u2014 but
+    it rarely leaves survivors to see it twice."
+  Icon: {fileID: -1018004323935652598, guid: 8f598254e82e9a34bbe4016f881505e5, type: 3}
+  Rarity: {fileID: 11400000, guid: a5dbd344df3dee949908df1206d23c0b, type: 2}
   ShipPrefab: {fileID: 6911670032008572406, guid: 105eb3dd78937b446b2ea7771f83758a, type: 3}
-  Rarity: 2
   Speed: 20
   Cost: 0
   itemDropChance: 0
-  tbd: 

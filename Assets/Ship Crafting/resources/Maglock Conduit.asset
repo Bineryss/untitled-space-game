@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86edfd4d57bd9d841b442cd94bd5870f, type: 3}
+  m_Name: Maglock Conduit
+  m_EditorClassIdentifier: 
+  Name: Maglock Conduit
+  Description: A high-capacity conduit engineered to bridge incompatible power systems
+    across alien and human tech. Its flexible ferro-fiber housing protects an inner
+    matrix of dynamic relays and golden-threaded control lines. On either end, adaptive
+    magnetic clamps auto-tune to foreign ports, making it indispensable in jury-rigged
+    builds and hybrid ship retrofits. Without it, most black-market tech would fry
+    the moment it's powered up.
+  Icon: {fileID: -4354910004204080244, guid: 4134f8a7fa1915d41949e17a8f3bc5e4, type: 3}
+  Rarity: {fileID: 11400000, guid: a5dbd344df3dee949908df1206d23c0b, type: 2}
+  CraftItem: 7

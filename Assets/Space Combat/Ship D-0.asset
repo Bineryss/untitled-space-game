@@ -12,9 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2255fa8bfaa432489b3b82d3b0ae24f, type: 3}
   m_Name: Ship D-0
   m_EditorClassIdentifier: 
+  Name: Temporal Fang
+  Description: "The Temporal Fang is built around a stabilized Phasematter Frame,
+    designed to flicker in and out of time like a strobe. Its edge surfaces ripple
+    constantly, as though never fully anchored in the present. Highly agile and notoriously
+    hard to hit, it appears to \u201Cteleport\u201D short distances mid-movement.\n\n"
+  Icon: {fileID: 4617567993970860312, guid: 6951ca5095e50b8459e6bb5e3946f642, type: 3}
+  Rarity: {fileID: 11400000, guid: e5ca2f9daf694944798db7f4b73e2190, type: 2}
   ShipPrefab: {fileID: 6911670032008572406, guid: 99ba8ab637d416e4f98385bb9328ad06, type: 3}
-  Rarity: 4
   Speed: 30
   Cost: 0
   itemDropChance: 0
-  tbd: 

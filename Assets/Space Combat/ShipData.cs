@@ -1,11 +1,10 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "ShipData", menuName = "Game/ShipData")]
-public class ShipData : ScriptableObject
+public class ShipData : InventoryItem
 {
     [Header("Ship Data")]
     [SerializeField] public GameObject ShipPrefab;
-    public Rarity Rarity;
 
     [Header("Enemy Data")]
     [SerializeField] public float Speed;

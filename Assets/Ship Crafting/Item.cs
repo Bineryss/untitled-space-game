@@ -2,16 +2,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Item", menuName = "Crafting/Item")]
-public class Item : ScriptableObject
+public class Item : InventoryItem
 {
-    [Header("UI")]
-    public string Name = "<Item Name>";
-    public string Description = "<Item Desription>";
-    public Sprite Sprite;
-
     [Header("Gameplay")]
     public Characteristic CraftItem = Characteristic.NOTHING;
-    public Rarity Rarity;
 }
 
 [System.Serializable]

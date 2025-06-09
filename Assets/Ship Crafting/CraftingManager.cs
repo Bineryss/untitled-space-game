@@ -10,8 +10,8 @@ public class CraftingManager : MonoBehaviour
     public static CraftingManager Instance { get; private set; }
 
     [SerializeField] private int maxLenght;
-    [SerializeField] private List<CharacteristicReciep> recieps;
-    [SerializeField] private CraftedData scrap;
+    [SerializeField] private List<CraftingRecipe> recieps;
+    [SerializeField] private InventoryItem scrap;
 
     void Awake()
     {
@@ -48,7 +48,7 @@ public class CraftingManager : MonoBehaviour
         return true;
     }
 
-    public CraftedData Craft()
+    public InventoryItem Craft()
     {
         //TODO item specific recipie check
 
@@ -60,7 +60,7 @@ public class CraftingManager : MonoBehaviour
             return scrap;
         }
 
-        CharacteristicReciep match = recieps
+        CraftingRecipe match = recieps
         .FirstOrDefault(reciep => reciep.Required
             .OrderBy(el => el)
             .SequenceEqual(characteristics.OrderBy(el => el))
@@ -89,29 +89,4 @@ public class SpecificReciep
     public List<Item> Required;
 
     public string Result;
-}
-[System.Serializable]
-public class CharacteristicReciep
-{
-    public List<Characteristic> Required;
-    public CraftedData Result;
-}
-
-
-
-public interface IItem
-{
-    public string Name { get; }
-    public string Description { get; }
-    public Rarity Rarity { get; }
-    public Sprite Sprite { get; }
-}
-
-
-[System.Serializable]
-public struct CraftedData
-{
-    public string Name;
-    public Rarity Rarity;
-    public Sprite Sprite;
 }

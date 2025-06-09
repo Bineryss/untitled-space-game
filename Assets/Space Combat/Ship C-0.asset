@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2255fa8bfaa432489b3b82d3b0ae24f, type: 3}
   m_Name: Ship C-0
   m_EditorClassIdentifier: 
+  Name: 
+  Description: 
+  Icon: {fileID: -6849909325182370604, guid: 70be6cbe9bd07074eae0756e5045b2af, type: 3}
+  Rarity: {fileID: 11400000, guid: f488a382ebb45fb4c9d6d437eaf44db2, type: 2}
   ShipPrefab: {fileID: 6911670032008572406, guid: 4a6ad66d8917b4e489c6f3e087d1b17d, type: 3}
-  Rarity: 1
   Speed: 20
   Cost: 0
   itemDropChance: 0
-  tbd: 

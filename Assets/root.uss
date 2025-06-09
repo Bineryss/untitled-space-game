@@ -69,7 +69,7 @@
     border-top-right-radius: 14px;
     border-bottom-right-radius: 14px;
     border-bottom-left-radius: 14px;
-    background-image: url("project://database/Assets/Ship%20Crafting/polymetallic-icon.PNG?fileID=2800000&guid=c73994b5e9ffdc645aa3b72c66a62956&type=3#polymetallic-icon");
+    background-image: url("project://database/Assets/Ship%20Crafting/resources/polymetallic-icon.PNG?fileID=2800000&guid=c73994b5e9ffdc645aa3b72c66a62956&type=3#polymetallic-icon");
     width: 144px;
     height: 144px;
 }

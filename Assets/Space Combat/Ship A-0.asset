@@ -12,9 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2255fa8bfaa432489b3b82d3b0ae24f, type: 3}
   m_Name: Ship A-0
   m_EditorClassIdentifier: 
+  Name: Wraith-7 Interceptor
+  Description: The Wraith-7 Interceptor is a low-profile attack craft designed for
+    deep-space recon, silent ambushes, and hit-and-fade tactics. Wrapped in adaptive
+    nullfiber plating and built around a fused stealth frame, it distorts scans and
+    emits no heat signature unless actively engaged.
+  Icon: {fileID: 3525850786108738573, guid: 62fe8432dcec6984aa3c3157a448344c, type: 3}
+  Rarity: {fileID: 11400000, guid: 0ce1291977fe2d34699fc76992dc7a5b, type: 2}
   ShipPrefab: {fileID: 6911670032008572406, guid: 0863b7bc582dbb549a2c87ad9b473fa4, type: 3}
-  Rarity: 3
   Speed: 25
   Cost: 0
   itemDropChance: 0
-  tbd: 

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86edfd4d57bd9d841b442cd94bd5870f, type: 3}
+  m_Name: Synthmetal Alloy
+  m_EditorClassIdentifier: 
+  Name: Synthmetal Alloy
+  Description: "A durable, silver-gray alloy forged from recycled hull plating and
+    asteroid ore. It\u2019s favored for its high tensile strength and resistance
+    to extreme pressure fluctuations, making it a staple material in the construction
+    of ship frames, internal supports, and reactor housings. Reliable and abundant,
+    it\u2019s the bread-and-butter of any shipbuilder\u2019s inventory."
+  Icon: {fileID: -3389354762095010683, guid: 0bd9dd7a286b7c54886967813c21d95e, type: 3}
+  Rarity: {fileID: 11400000, guid: f488a382ebb45fb4c9d6d437eaf44db2, type: 2}
+  CraftItem: 2

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86edfd4d57bd9d841b442cd94bd5870f, type: 3}
+  m_Name: Ionseed Core
+  m_EditorClassIdentifier: 
+  Name: Ionseed Core
+  Description: A compact, swirling nucleus of compressed ionized gas held stable
+    by an ancient containment lattice. Once part of a derelict alien power source,
+    it pulses with rhythmic bursts of searing plasma energy. Its intense heat output
+    makes it a key catalyst in crafting high-energy weaponry or thruster systems
+    that leave trails of burning light.
+  Icon: {fileID: -3761430629388149364, guid: f8a417ca93027c048bd07cd153618e7b, type: 3}
+  Rarity: {fileID: 11400000, guid: a5dbd344df3dee949908df1206d23c0b, type: 2}
+  CraftItem: 6

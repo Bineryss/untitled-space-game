@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86edfd4d57bd9d841b442cd94bd5870f, type: 3}
-  m_Name: Voidrium
+  m_Name: Plasmite
   m_EditorClassIdentifier: 
-  Name: Voidrium
-  Description: A dark, energy-absorbing metal ideal for stealth ship hulls
-  Sprite: {fileID: -3042670998210284883, guid: 89850031480e9ca4bb7d5d006c18e6f5, type: 3}
-  CraftItem: 0
-  Rarity: 4
+  Name: Plasmite
+  Description: Crystalline material that naturally channels plasma energy
+  Icon: {fileID: -2822417714644885741, guid: 02567ec0f5f1008498ab6dc9ffec22b7, type: 3}
+  Rarity: {fileID: 11400000, guid: a5dbd344df3dee949908df1206d23c0b, type: 2}
+  CraftItem: 6

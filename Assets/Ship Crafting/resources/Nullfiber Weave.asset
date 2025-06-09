@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86edfd4d57bd9d841b442cd94bd5870f, type: 3}
+  m_Name: Nullfiber Weave
+  m_EditorClassIdentifier: 
+  Name: Nullfiber Weave
+  Description: A matte-black bundle of ultra-light, memory-reactive fibers harvested
+    from synthetic voidsilk creatures drifting in deep space. When wrapped around
+    ship components, it absorbs radar signals, thermal emissions, and even faint
+    gravitational echoes, rendering vessels nearly invisible to standard detection
+    arrays. Often used in the outer layers of stealth-class hull plating or cloaking
+    device housings.
+  Icon: {fileID: 5051538709172439113, guid: 5504bb809d28256429e5a643fe8f2108, type: 3}
+  Rarity: {fileID: 11400000, guid: c7139d1d8f80c0b4e93b2b669e4d42ef, type: 2}
+  CraftItem: 0

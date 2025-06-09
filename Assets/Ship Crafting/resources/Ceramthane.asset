@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86edfd4d57bd9d841b442cd94bd5870f, type: 3}
-  m_Name: Polymetallic
+  m_Name: Ceramthane
   m_EditorClassIdentifier: 
-  Name: Polymetallic
-  Description: Multi-element alloy for general ship components
-  Sprite: {fileID: -6490750339569668760, guid: c73994b5e9ffdc645aa3b72c66a62956, type: 3}
-  CraftItem: 7
-  Rarity: 0
+  Name: 'Ceramthane '
+  Description: Heat-resistant ceramic compound for engine components
+  Icon: {fileID: 870697920081174769, guid: 6c88085782fba8f4f86c070aa85bdf4f, type: 3}
+  Rarity: {fileID: 11400000, guid: f488a382ebb45fb4c9d6d437eaf44db2, type: 2}
+  CraftItem: 8
