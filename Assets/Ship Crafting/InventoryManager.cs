@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class InventoryManager : MonoBehaviour
+public class InventoryManager2 : MonoBehaviour
 {
     [SerializeField] private List<ResourceQuantity> inventory;
     [SerializeField] public Dictionary<Item, ResourceQuantity> Inventory;
 
-    public static InventoryManager Instance { get; private set; }
+    public static InventoryManager2 Instance { get; private set; }
 
     void Awake()
     {
@@ -45,5 +45,4 @@ public class InventoryManager : MonoBehaviour
             Inventory[item] = newValue;
         }
     }
-
 }

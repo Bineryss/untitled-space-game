@@ -35,27 +35,6 @@
     border-bottom-color: rgb(255, 167, 0);
 }
 
-.button {
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
-    border-bottom-right-radius: 14px;
-    border-bottom-left-radius: 14px;
-    border-top-width: 2px;
-    border-right-width: 2px;
-    border-bottom-width: 2px;
-    border-left-width: 2px;
-    border-left-color: rgb(0, 0, 0);
-    border-right-color: rgb(0, 0, 0);
-    border-top-color: rgb(0, 0, 0);
-    border-bottom-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.button-text {
-    font-size: 24px;
-    -unity-font-style: bold;
-}
-
 .placeholder {
     border-top-width: 2px;
     border-right-width: 2px;
@@ -72,4 +51,68 @@
     background-image: url("project://database/Assets/Ship%20Crafting/resources/polymetallic-icon.PNG?fileID=2800000&guid=c73994b5e9ffdc645aa3b72c66a62956&type=3#polymetallic-icon");
     width: 144px;
     height: 144px;
+}
+
+.button {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    transition-duration: 0.2s;
+}
+
+.button:hover {
+    transition-duration: 0.2s;
+    scale: 1.05 1.05;
+}
+
+.button:active {
+    transition-duration: 0.1s;
+    scale: 0.95 0.95;
+}
+
+.button-text {
+    font-size: 24px;
+    -unity-font-style: bold;
+    -unity-font-definition: url("project://database/Assets/Fonts/Roboto-VariableFont_wdth,wght.ttf?fileID=12800000&guid=10494ce88701aba48800ab87f1de1a3d&type=3#Roboto-VariableFont_wdth,wght");
+    -unity-text-align: middle-center;
+    text-overflow: clip;
+}
+
+.button-text-xl {
+    -unity-font-definition: url("project://database/Assets/Fonts/Bignoodletitling-8ojz.ttf?fileID=12800000&guid=67978f2249bf5ed49885096c59f4f911&type=3#Bignoodletitling-8ojz");
+    font-size: 64px;
+    -unity-text-align: middle-center;
+}
+
+.button-text {
+    font-size: 24px;
+    -unity-font-style: bold;
+    -unity-font-definition: url("project://database/Assets/Fonts/Roboto-VariableFont_wdth,wght.ttf?fileID=12800000&guid=10494ce88701aba48800ab87f1de1a3d&type=3#Roboto-VariableFont_wdth,wght");
+    -unity-text-align: middle-center;
+    text-overflow: clip;
+}
+
+.divider {
+    border-top-width: 4px;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
 }

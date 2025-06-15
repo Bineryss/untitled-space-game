@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/root.uss?fileID=7433441132597879392&amp;guid=76d522cb3855b71438c2c37437722a38&amp;type=3#root" />
+    <ui:VisualElement name="VisualElement" style="flex-grow: 1; justify-content: center; align-self: center; max-width: 500px; min-width: 500px;">
+        <ui:Button text="PLAY" name="play" class="button-text button" />
+        <ui:Button text="STELLAR FOUNDRY" name="crafting" class="button-text button" />
+        <ui:Button text="LAUNCH DESIGNER" name="ship-config" class="button-text button" />
+        <ui:VisualElement style="flex-grow: initial; flex-direction: row; justify-content: space-between;">
+            <ui:TextField placeholder-text="item-code" hide-placeholder-on-focus="false" name="item-spawn-input" style="flex-grow: 1;" />
+            <ui:Button text="SPAWN" name="item-spawn" class="button-text button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

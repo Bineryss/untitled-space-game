@@ -1,14 +1,19 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <ui:Template name="item-card" src="project://database/Assets/Ship%20Crafting/item-card.uxml?fileID=9197481963319205126&amp;guid=a326caabd2a94d340afaf909a1168edf&amp;type=3#item-card" />
     <Style src="project://database/Assets/root.uss?fileID=7433441132597879392&amp;guid=76d522cb3855b71438c2c37437722a38&amp;type=3#root" />
-    <ui:VisualElement style="flex-grow: 1;">
-        <ui:VisualElement style="flex-grow: initial; flex-direction: column; justify-content: center; margin-top: 24px; margin-right: 24px; margin-bottom: 24px; margin-left: 24px;">
+    <ui:VisualElement style="flex-grow: 1; margin-top: 24px; margin-right: 24px; margin-bottom: 24px; margin-left: 24px;">
+        <ui:VisualElement style="flex-grow: initial; flex-direction: column; justify-content: center; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
             <ui:VisualElement name="container" style="flex-grow: initial; align-items: center; justify-content: center; flex-direction: row; height: 240px;" />
             <ui:VisualElement style="flex-grow: initial; flex-direction: row; justify-content: space-around; margin-top: 24px; margin-right: 0; margin-bottom: 0; margin-left: 0;">
-                <ui:Button text="Craft" name="craft" class="button button-text" style="flex-grow: 1;" />
+                <ui:Button text="Forge Ship" name="craft" class="button button-text-xl" style="flex-grow: initial; align-self: auto; padding-top: 24px; padding-right: 98px; padding-bottom: 24px; padding-left: 98px;" />
                 <ui:Instance template="item-card" name="product-holder" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:ListView name="inventory-list" virtualization-method="DynamicHeight" horizontal-scrolling="true" reorderable="true" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+        <ui:VisualElement style="flex-grow: initial; flex-direction: row; align-items: center;">
+            <ui:VisualElement class="divider" style="flex-grow: 1;" />
+            <ui:Label text="Inventory" style="color: rgb(255, 255, 255); font-size: 48px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Roboto-VariableFont_wdth,wght.ttf?fileID=12800000&amp;guid=10494ce88701aba48800ab87f1de1a3d&amp;type=3#Roboto-VariableFont_wdth,wght&quot;); -unity-font-style: bold; margin-right: 16px; margin-left: 16px;" />
+            <ui:VisualElement class="divider" style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:ListView name="inventory-list" virtualization-method="DynamicHeight" horizontal-scrolling="true" reorderable="true" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-wrap: wrap;" />
     </ui:VisualElement>
 </ui:UXML>

@@ -53,6 +53,7 @@ public class CraftingManager : MonoBehaviour
         //TODO item specific recipie check
 
         List<Characteristic> characteristics = SelectedResources.Select(el => el.CraftItem).ToList();
+        SelectedResources.Clear();
 
         if (characteristics.Where(c => c != Characteristic.NOTHING).Distinct().ToList().Count > 1)
         {

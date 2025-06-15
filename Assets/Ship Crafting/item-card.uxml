@@ -6,8 +6,8 @@
             <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Ship%20Crafting/assets/item-frame-text-holder.png?fileID=2800000&amp;guid=d1bfbf6802c2fc44ba3f06628964ba2c&amp;type=3#item-frame-text-holder&quot;); background-size: contain; width: auto; position: absolute; right: 0; bottom: 0; left: 0; top: 0; justify-content: space-between;" />
             <ui:VisualElement name="image" style="flex-grow: 1; background-image: none; background-size: contain; min-height: auto;" />
             <ui:VisualElement style="flex-grow: initial; flex-direction: row; justify-content: space-between; align-self: stretch; align-items: center;">
-                <ui:Label text="#name" name="label" class="item-text" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
-                <ui:Label text="#quantity" name="quantity" class="item-text" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; font-size: 14px;" />
+                <ui:Label text="#name" name="label" class="item-text" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Roboto-VariableFont_wdth,wght.ttf?fileID=12800000&amp;guid=10494ce88701aba48800ab87f1de1a3d&amp;type=3#Roboto-VariableFont_wdth,wght&quot;);" />
+                <ui:Label text="#quantity" name="quantity" class="item-text" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; font-size: 14px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Roboto-VariableFont_wdth,wght.ttf?fileID=12800000&amp;guid=10494ce88701aba48800ab87f1de1a3d&amp;type=3#Roboto-VariableFont_wdth,wght&quot;);" />
             </ui:VisualElement>
         </ui:Button>
     </ui:VisualElement>

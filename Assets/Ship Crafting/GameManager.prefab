@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1608249405997681796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1605970861671327338}
+  - component: {fileID: 8247337958856655179}
+  - component: {fileID: 4522544576555421840}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1605970861671327338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608249405997681796}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8247337958856655179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608249405997681796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c41d681259bc184e9641063df4971f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory:
+  - Ressorce: {fileID: 11400000, guid: 3534e4681c11ad14386100ede21819af, type: 2}
+    Quantity: 145
+  - Ressorce: {fileID: 11400000, guid: b3d4f70fc1ffc1a43adaab7d15c4febc, type: 2}
+    Quantity: 104
+  - Ressorce: {fileID: 11400000, guid: a18afcb19ac08624f86d8fc35c583a41, type: 2}
+    Quantity: 24
+  - Ressorce: {fileID: 11400000, guid: 4eeeac3322d3b3c409d09d712a9f55d1, type: 2}
+    Quantity: 47
+  - Ressorce: {fileID: 11400000, guid: 8d79d5bcc88c45d4b8a0fe4bd54b280c, type: 2}
+    Quantity: 10
+  - Ressorce: {fileID: 11400000, guid: 09f1c1c831e3eb845b134e12ea942cb5, type: 2}
+    Quantity: 5
+  - Ressorce: {fileID: 11400000, guid: 0e14d131f3e99664f8680209f2dfbbaa, type: 2}
+    Quantity: 5
+  - Ressorce: {fileID: 11400000, guid: c9a12b226827b814caa023e9ebc19015, type: 2}
+    Quantity: 5
+  - Ressorce: {fileID: 11400000, guid: c88b846f917eb384e948101eeac4e8c1, type: 2}
+    Quantity: 5
+  - Ressorce: {fileID: 11400000, guid: a0a9091f83993fd4c8aec3220260b518, type: 2}
+    Quantity: 5
+  - Ressorce: {fileID: 11400000, guid: 7906cb643a8e5ab45b2909a0b686795a, type: 2}
+    Quantity: 5
+  - Ressorce: {fileID: 11400000, guid: a0a9091f83993fd4c8aec3220260b518, type: 2}
+    Quantity: 5
+--- !u!114 &4522544576555421840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608249405997681796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f849e0765584424db6c22a2b96a3701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectedResources: []
+  maxLenght: 5
+  recieps:
+  - {fileID: 11400000, guid: 45bbfcb56a0fc2a47b6d817c5bff90c4, type: 2}
+  - {fileID: 11400000, guid: 05d4672d81b42034580ff83e24b6c1ab, type: 2}
+  - {fileID: 11400000, guid: 8fe79b1037d388e44a61c7d366577ddb, type: 2}
+  scrap: {fileID: 11400000, guid: a0a9091f83993fd4c8aec3220260b518, type: 2}

@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/root.uss?fileID=7433441132597879392&amp;guid=76d522cb3855b71438c2c37437722a38&amp;type=3#root" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:VisualElement name="header" style="flex-grow: initial; flex-direction: column; align-self: stretch; align-items: center; -unity-font-style: bold; font-size: 24px;">
+            <ui:Label text="Label" name="page-label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Bignoodletitling-8ojz.ttf?fileID=12800000&amp;guid=67978f2249bf5ed49885096c59f4f911&amp;type=3#Bignoodletitling-8ojz&quot;); font-size: 64px; color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="main" style="flex-grow: 1;" />
+        <ui:VisualElement name="footer" style="flex-grow: initial; flex-direction: row; justify-content: space-around;">
+            <ui:Button text="Home" name="home" class="button" />
+            <ui:Button text="Save" name="save" class="button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
